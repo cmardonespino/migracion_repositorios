@@ -16,7 +16,7 @@ Para correr los scripts, lo que se necesita en tu computador son:
 Por otro lado, se necesita generar un [access token para Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) y [access token para Github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) según archivos de carpetas correspondientes.
 
 ## HOW-TO
-Como paso inicial, se debe configurar el archivo [variables.py Gitlab]('Gitlab/variables.py')
+Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py)
 
 ## Migración de Gitlab a Bitbucket
 ## Migración de Github a Bitbucket
