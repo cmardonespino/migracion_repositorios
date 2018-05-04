@@ -1,5 +1,5 @@
 # Migración de repositorios
-Proyecto correspondiente al desarrollo de scripts en python para migrar repositorios Github y Gitlab a Bitbucket Cloud.
+Proyecto correspondiente al desarrollo de scripts en python para migrar repositorios Github y Gitlab a [Bitbucket Cloud](https://www.google.com/search?q=bitbucket+cloud&ie=utf-8&oe=utf-8&client=firefox-b-ab).
 Este se desarrolló en windows 7, por lo que si usted utiliza otro sistema operativo, tendrá que ir descargando las dependencias de acuerdo a su kernel.
 ## Requerimientos
 Para correr los scripts, lo que se necesita en tu computador son:
@@ -16,7 +16,7 @@ Para correr los scripts, lo que se necesita en tu computador son:
 Por otro lado, se necesita generar un [access token para Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) y [access token para Github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) según archivos de carpetas correspondientes.
 
 ## HOW-TO
-Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py)
+Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://www.google.com/search?q=bitbucket+cloud&ie=utf-8&oe=utf-8&client=firefox-b-ab)
 
 ## Migración de Gitlab a Bitbucket
 ## Migración de Github a Bitbucket
