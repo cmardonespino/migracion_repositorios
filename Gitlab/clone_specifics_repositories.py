@@ -14,21 +14,8 @@ import json
 import os
 from subprocess import call
 from gitlab import Gitlab
-
-repositorios_a_clonar = [
-	'onboarding/ms-datosBasicosCliente-neg',
-	'viajes-inversiones/ms-depositosAPlazo-neg',
-	'onboarding/ms-creacionClaveCliente-orq',
-	'onboarding/ms-direccionesCliente-neg',
-	'onboarding/ms-seguridadCliente-neg',
-	'onboarding/ig-tdm-clientes',
-	'onboarding/ig-ibm-direccionescliente',
-	'onboarding/onboarding-assets',
-	'Integracion/ig-ibm-clientes',
-	'viajes-inversiones/ms-estadoEnrolamientoInversiones-exp',
-	'Ux-front-end/webkit'
-]
+from variables import REPOSITORIOS_A_CLONAR
 
 os.chdir("./repositorios")
-for repositorio in repositorios_a_clonar:
+for repositorio in REPOSITORIOS_A_CLONAR:
 	os.system("git clone --mirror git@gitlab.bci.cl:"+repositorio+".git")
