@@ -1,21 +1,16 @@
 # Migración de repositorios
-Proyecto correspondiente al desarrollo de scripts escritos en python 2.7 para migrar repositorios Github y Gitlab a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
-Este se desarrolló en windows 7, por lo que si usted utiliza otro sistema operativo, tendrá que ir descargando las dependencias de acuerdo a su kernel.
-## Requerimientos
-Para correr los scripts, lo que se necesita en tu computador son:
+Proyecto correspondiente al desarrollo de scripts escritos en python 2.7 para migrar repositorios [Github](https://github.com/) y [Gitlab](https://gitlab.com) a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
+Los scripts fueron desarrollados el Sistema Operativo Windows 7, por lo que si usted utiliza otro sistema operativo, tendrá que descargar las dependencias de acuerdo al administrador de paquetes que usted puede o este utilizando.
+# Requerimientos
+Como requerimientos necesarios para utilizar este proyecto, usted necesita tener instalado en su computador:
 * python 2.7
 * pip 9.0.3
-* Tener la SSH KEY del computador registrada en Github y Gitlab
-### Dependencias
 * [pygithub](https://github.com/PyGithub/PyGithub)
 * [python-gitlab](https://github.com/python-gitlab/python-gitlab)
-* [mingw](https://mingw-w64.org/doku.php)
-* [administrador de paquetes Chocolatey](https://chocolatey.org)
+* administrador de paquetes [chocolatey](https://chocolatey.org)
 * [make](https://chocolatey.org/packages/make)
+* Tener la SSH KEY del computador registrada en [Github](https://github.com/) y [Gitlab](https://gitlab.com).
 
-Por otro lado, se necesita generar un [access token para Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) y [access token para Github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) según archivos de carpetas correspondientes.
-
-# HOW-TO
 Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket)
 
 ## Configuración variables.py para Gitlab
@@ -43,7 +38,8 @@ En esta variable, usted debe [generar una access token](https://help.github.com/
 ### USER_NAME
 En esta variable, usted debe ingresar el nombre de usuario del repositorio desde el cual se clonaran los repositorios.
 
-## Migración de Gitlab a Bitbucket
+# HOW-TO
+
 ## Migración de Github a Bitbucket
 
 ### Bibliografía utilizada
