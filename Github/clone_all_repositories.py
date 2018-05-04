@@ -11,22 +11,25 @@
 
 # https://github.com/jmoiron/python-github
 # https://github.com/PyGithub/PyGithub
-# https://github.com/copitux/python-github3
+#https://github.com/copitux/python-github3
 
-##########################################
-########### I M P O R T A N T E ##########
-###########################################################################################################################
-#http://www.inanzzz.com/index.php/post/wa1f/solution-for-ssh-connect-to-host-github-com-port-22-connection-timed-out-error#
-###########################################################################################################################
 import os
 import requests
 from github import Github
 
-URL_GIT_REPO = 'https://api.github.com/user/repos'
-PRIVATE_TOKEN_REPO = 'c894c78b7ed57fe45e1c39152e359327e22a41e0'
+NAME_ORGANIZATION = 'ogranizacionPrueba123'
+PRIVATE_TOKEN_REPO = 'a904517e3d38b85d6ae659c3410f9286738a8f69'
 
-url = "{}?access_token={}".format(URL_GIT_REPO, PRIVATE_TOKEN_REPO)
+url = "{}?access_token={}".format(
+	'https://api.github.com/orgs/'+NAME_ORGANIZATION+'/repos', 
+	PRIVATE_TOKEN_REPO
+)
 request_json = requests.get(url).json()
 
+print(url)
+
 for repo in request_json:
+	#print("git clone {}".format(repo["git_url"]))
+	#print(repo["ssh_url"])
+	#git@github.com:cmardonespino/AutoPower.git
 	os.system("git clone {}".format(repo["ssh_url"]))
