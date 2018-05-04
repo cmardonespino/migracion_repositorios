@@ -12,3 +12,7 @@ Por otro lado, se necesita generar un [access token para Gitlab](https://docs.gi
 
 ## Migración de Gitlab a Bitbucket
 ## Migración de Github a Bitbucket
+
+### Bibliografía utilizada
+* [How do I cd in python](https://stackoverflow.com/questions/431684/how-do-i-cd-in-python)
+* [API Github](https://developer.github.com/v3/)
