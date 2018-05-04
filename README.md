@@ -24,7 +24,7 @@ Para el archivo [variables.py](Gitlab/variables.py) se le solicitará una cierta
 #### URL_GIT_REPO
 En esta variable, usted debe ingresar la URL del servidor que se requiera clonar los repositorios
 #### PRIVATE_TOKEN_REPO
-En esta variable, usted debe [generar una access token](https://www.google.com/search?q=access+token+gitlab&ie=utf-8&oe=utf-8&client=firefox-b-ab) desde su cuenta registrada en la URL que usted ingreso. Una vez generado el token, usted debe ingresarlo en la variable.
+En esta variable, usted debe [generar una access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) desde su cuenta registrada en la URL que usted ingreso. Una vez generado el token, usted debe ingresarlo en la variable.
 
 ## Migración de Gitlab a Bitbucket
 ## Migración de Github a Bitbucket
