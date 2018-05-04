@@ -15,32 +15,32 @@ Para correr los scripts, lo que se necesita en tu computador son:
 
 Por otro lado, se necesita generar un [access token para Gitlab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) y [access token para Github](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) según archivos de carpetas correspondientes.
 
-## HOW-TO
+# HOW-TO
 Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://www.google.com/search?q=bitbucket+cloud&ie=utf-8&oe=utf-8&client=firefox-b-ab)
 
-### Variables para Gitlab
+## Variables para Gitlab
 Para el archivo [variables.py](Gitlab/variables.py), se le solicitará una cierta cantidad de variables las cuales serán utilizadas en los scripts.
 
-#### URL_GIT_REPO
+### URL_GIT_REPO
 En esta variable, usted debe ingresar la URL del servidor que se requiera clonar los repositorios
-#### PRIVATE_TOKEN_REPO
+### PRIVATE_TOKEN_REPO
 En esta variable, usted debe [generar una access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html) desde su cuenta registrada en la URL que usted ingreso. Una vez generado el token, usted debe ingresarlo en la variable.
-#### API_VERSION
+### API_VERSION
 Esta variable ya viene por defecto ya que se utiliza la [API V3 de Gitlab](https://docs.gitlab.com/ee/api/).
-#### GRUPOS_REPOSITORIOS_A_CLONAR
+### GRUPOS_REPOSITORIOS_A_CLONAR
 En esta variable, usted debe ingresar los nombres de los grupos de los repositorios los cuales usted desee descargar.
-#### REPOSITORIOS_A_CLONAR
+### REPOSITORIOS_A_CLONAR
 En esta variable, usted debe ingresar el nombre del grupo/nombre del repositorio al cual se desee clonar.
 
-### Variables para Github
+## Variables para Github
 Para el archivo [variables.py](Github/variables.py), se le solicitará una cierta cantidad de variables las cuales serán utilizadas en los scripts.
-#### REPOS_TO_CLONE
+### REPOS_TO_CLONE
 En esta variable, usted debe ingresar el nombre del repositorio el cual se desee clonar.
-#### NAME_ORGANIZATION
+### NAME_ORGANIZATION
 En esta variable, usted debe ingresar el nombre de la organización donde se encuentren los repositorios a clonar
-#### PRIVATE_TOKEN_REPO
+### PRIVATE_TOKEN_REPO
 En esta variable, usted debe [generar una access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) desde su cuenta registrada en la URL que usted ingreso. Una vez generado el token, usted debe ingresarlo en la variable.
-#### USER_NAME
+### USER_NAME
 En esta variable, usted debe ingresar el nombre de usuario del repositorio desde el cual se clonaran los repositorios.
 
 
