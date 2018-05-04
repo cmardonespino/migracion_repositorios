@@ -3,3 +3,4 @@
 URL_GIT_REPO = 'http://gitlab.bci.cl'
 PRIVATE_TOKEN_REPO = ''
 API_VERSION = 3
+USER_NAME = 'cmardonespino'
