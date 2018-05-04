@@ -41,6 +41,7 @@ case "$1" in
     ;;
   specifics_group_gitlab)
     cd Gitlab
+    green "CLONANDO REPOSITORIOS DE GRUPOS ESPECIFICOS DE GITLAB"
     ;;
   specifics_repo_gitlab)
     cd Gitlab
