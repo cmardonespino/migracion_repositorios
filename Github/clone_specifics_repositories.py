@@ -3,14 +3,12 @@
 import os
 import requests
 from github import Github
+from variables import NAME_ORGANIZATION, PRIVATE_TOKEN_REPO
 
 repositorios_a_clonar = [
 	'repoPrueba4',
 	'repoPrueba5'
 ]
-
-NAME_ORGANIZATION = 'ogranizacionPrueba123'
-PRIVATE_TOKEN_REPO = 'a904517e3d38b85d6ae659c3410f9286738a8f69'
 
 url = "{}?access_token={}".format(
 	'https://api.github.com/orgs/'+NAME_ORGANIZATION+'/repos', 

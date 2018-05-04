@@ -13,6 +13,7 @@ import json
 import os
 from subprocess import call
 from gitlab import Gitlab
+from variables import URL_GIT_REPO, PRIVATE_TOKEN_REPO, API_VERSION
 
 grupos_repositorios_a_clonar = [
 	'viajes-inversiones',
@@ -20,15 +21,12 @@ grupos_repositorios_a_clonar = [
 	'Ux-front-end'
 ]
 
-URL_GIT_REPO = 'http://gitlab.bci.cl'
-PRIVATE_TOKEN_REPO = 'twxCBBbpVkZuhMS9Dc3B'
-API_VERSION = 3
-
 gl = Gitlab(URL_GIT_REPO,  private_token=PRIVATE_TOKEN_REPO, api_version=API_VERSION)
 gl.auth()
 
 projects = gl.projects.list()
 
+os.chdir("./repositorios")
 for project in projects:
 	for repositorio in grupos_repositorios_a_clonar:
 		if(project.namespace.path==repositorio):

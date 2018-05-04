@@ -15,10 +15,7 @@ import json
 import os
 from subprocess import call
 from gitlab import Gitlab
-
-URL_GIT_REPO = 'http://gitlab.bci.cl'
-PRIVATE_TOKEN_REPO = 'twxCBBbpVkZuhMS9Dc3B'
-API_VERSION = 3
+from variables import URL_GIT_REPO, PRIVATE_TOKEN_REPO, API_VERSION
 
 gl = Gitlab(URL_GIT_REPO,  private_token=PRIVATE_TOKEN_REPO, api_version=API_VERSION)
 gl.auth()

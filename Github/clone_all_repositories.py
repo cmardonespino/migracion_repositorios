@@ -16,9 +16,7 @@
 import os
 import requests
 from github import Github
-
-NAME_ORGANIZATION = 'ogranizacionPrueba123'
-PRIVATE_TOKEN_REPO = 'a904517e3d38b85d6ae659c3410f9286738a8f69'
+from variables import NAME_ORGANIZATION, PRIVATE_TOKEN_REPO
 
 url = "{}?access_token={}".format(
 	'https://api.github.com/orgs/'+NAME_ORGANIZATION+'/repos', 

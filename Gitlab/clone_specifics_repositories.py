@@ -29,5 +29,6 @@ repositorios_a_clonar = [
 	'Ux-front-end/webkit'
 ]
 
+os.chdir("./repositorios")
 for repositorio in repositorios_a_clonar:
 	os.system("git clone --mirror git@gitlab.bci.cl:"+repositorio+".git")
