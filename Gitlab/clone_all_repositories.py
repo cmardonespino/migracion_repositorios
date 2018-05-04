@@ -24,6 +24,7 @@ gl = Gitlab(URL_GIT_REPO,  private_token=PRIVATE_TOKEN_REPO, api_version=API_VER
 gl.auth()
 
 projects = gl.projects.list()								
-															
+				
+os.chdir("./repositorios")											
 for project in projects:									
 	os.system("git clone --mirror "+project.ssh_url_to_repo)

@@ -26,8 +26,7 @@ url = "{}?access_token={}".format(
 )
 request_json = requests.get(url).json()
 
-print(url)
-
+os.chdir("./repositorios")
 for repo in request_json:
 	#print("git clone {}".format(repo["git_url"]))
 	#print(repo["ssh_url"])

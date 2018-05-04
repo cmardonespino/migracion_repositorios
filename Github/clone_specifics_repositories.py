@@ -18,6 +18,7 @@ url = "{}?access_token={}".format(
 )
 request_json = requests.get(url).json()
 
+os.chdir("./repositorios")
 for repositorio in repositorios_a_clonar:
 	#os.system("git clone --mirror git@gitlab.bci.cl:"+repositorio+".git")
 	#git@github.com:ogranizacionPrueba123/repoPrueba5.git
