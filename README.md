@@ -18,6 +18,12 @@ Por otro lado, se necesita generar un [access token para Gitlab](https://docs.gi
 ## HOW-TO
 Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://www.google.com/search?q=bitbucket+cloud&ie=utf-8&oe=utf-8&client=firefox-b-ab)
 
+### Variables para Gitlab
+Para el archivo [variables.py](Gitlab/variables.py) se le solicitará una cierta cantidad de variables las cuales serán utilizadas en los scripts.
+
+#### URL_GIT_REPO
+En esta variable, usted debe ingresar la URL del servidor que se requiera clonar los repositorios
+
 ## Migración de Gitlab a Bitbucket
 ## Migración de Github a Bitbucket
 
