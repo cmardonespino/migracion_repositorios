@@ -5,8 +5,8 @@ Los scripts fueron desarrollados el Sistema Operativo Windows 7, por lo que si u
 Como requerimientos necesarios para utilizar este proyecto, usted necesita tener instalado en su computador:
 * python 2.7
 * pip 9.0.3
-* [pygithub](https://github.com/PyGithub/PyGithub)
-* [python-gitlab](https://github.com/python-gitlab/python-gitlab)
+* pygithub
+* python-gitlab
 * administrador de paquetes [chocolatey](https://chocolatey.org)
 * [make](https://chocolatey.org/packages/make)
 * Tener la SSH KEY del computador registrada en [Github](https://github.com/) y [Gitlab](https://gitlab.com).
