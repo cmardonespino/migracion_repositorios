@@ -8,14 +8,12 @@ from variables import NAME_ORGANIZATION, USER_NAME
 
 carpetas_en_el_directorio = os.listdir("./repositorios")
 
-path_principal = os.getcwd()
-print(path_principal)
+'''
+	GUARDAMOS EL PATH DONDE SE ENCUENTRAN LOS .PY PARA VOLVER
+	DE LA CARPETA REPOSITORIOS A CARPETA GITX
+'''
 
-'''
-os.chdir("./repositorios")
-cwd = os.getcwd()
-print(cwd)
-'''
+path_principal = os.getcwd()
 
 for name in carpetas_en_el_directorio:
 	os.chdir("./repositorios/"+name)

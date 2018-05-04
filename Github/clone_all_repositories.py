@@ -27,7 +27,4 @@ request_json = requests.get(url).json()
 
 os.chdir("./repositorios")
 for repo in request_json:
-	#print("git clone {}".format(repo["git_url"]))
-	#print(repo["ssh_url"])
-	#git@github.com:cmardonespino/AutoPower.git
 	os.system("git clone {}".format(repo["ssh_url"]))
