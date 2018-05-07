@@ -19,5 +19,5 @@ for name in carpetas_en_el_directorio:
 	os.chdir("./repositorios/"+name)
 	#os.system("git init")
 	os.system("git remote add origen git@bitbucket.org:"+USER_NAME+"/"+name.lower()+".git")
-	os.system("git push origen --mirror")
+	os.system("git push origen")
 	os.chdir(path_principal)

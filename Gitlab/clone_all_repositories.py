@@ -12,16 +12,21 @@
 # https://github.com/python-gitlab/python-gitlab/tree/0.10
 
 import json
-import os
+import os, sys
 from subprocess import call
 from gitlab import Gitlab
 from variables import URL_GIT_REPO, PRIVATE_TOKEN_REPO, API_VERSION
 
-gl = Gitlab(URL_GIT_REPO,  private_token=PRIVATE_TOKEN_REPO, api_version=API_VERSION)
-gl.auth()
+try:
+	gl = Gitlab(URL_GIT_REPO,  private_token=PRIVATE_TOKEN_REPO, api_version=API_VERSION)
+	gl.auth()
 
-projects = gl.projects.list()								
-				
-os.chdir("./repositorios")											
-for project in projects:									
-	os.system("git clone --mirror "+project.ssh_url_to_repo)
+	projects = gl.projects.list()								
+					
+	os.chdir("./repositorios")											
+	for project in projects:									
+		os.system("git clone "+project.ssh_url_to_repo)
+
+	print("valor: "+os.listdir('.'))
+except:
+	sys.exit('Ha ocurrido un error.\n\n1) Verifique si ingreso el access token junto a su nombre de usuario\n2) Verifique si el nombre del o los repositorios son correctos\n\n')

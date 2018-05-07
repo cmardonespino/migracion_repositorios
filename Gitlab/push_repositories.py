@@ -2,7 +2,7 @@
 
 import os, sys
 import requests
-from variables import NAME_ORGANIZATION, USER_NAME
+from variables import USER_NAME
 
 # https://developer.atlassian.com/bitbucket/api/2/reference/meta/filtering
 
@@ -19,5 +19,5 @@ for name in carpetas_en_el_directorio:
 	os.chdir("./repositorios/"+name)
 	#os.system("git init")
 	os.system("git remote add origen git@bitbucket.org:"+USER_NAME+"/"+name.lower()+".git")
-	os.system("git push origen --mirror")
+	os.system("git push origen")
 	os.chdir(path_principal)

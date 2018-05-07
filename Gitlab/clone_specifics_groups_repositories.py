@@ -24,4 +24,4 @@ os.chdir("./repositorios")
 for project in projects:
 	for repositorio in GRUPOS_REPOSITORIOS_A_CLONAR:
 		if(project.namespace.path==repositorio):
-			os.system("git clone --mirror git@gitlab.bci.cl:"+project.namespace.path+"/"+project.path+".git")
+			os.system("git clone git@gitlab.bci.cl:"+project.namespace.path+"/"+project.path+".git")
