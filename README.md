@@ -15,7 +15,7 @@ Usted puede instalar lo mencionado anteriormente con el administrador de paquete
 
 Usted además debe crear un directorio llamado "repositorios" en las carpetas [Gitlab](/Gitlab) y [Github](/Github) y, por último, necesita tener asociada una SSH Key del computador registrada en [Github](https://github.com/) y [Gitlab](https://gitlab.com) [Bitbucket Cloud](https://bitbucket.org/).
 
-## 2.1Configuración variables.y
+## 2.1 Configuración variables.y
 Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
 ### 2.1.1 Configuración variables.py para Gitlab
 Para el archivo [variables.py](Gitlab/variables.py), se le solicitará una cierta cantidad de variables las cuales serán utilizadas en los scripts.
