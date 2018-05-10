@@ -18,4 +18,4 @@ from variables import REPOSITORIOS_A_CLONAR
 
 os.chdir("./repositorios")
 for repositorio in REPOSITORIOS_A_CLONAR:
-	os.system("git clone git@gitlab.bci.cl:"+repositorio+".git")
+	os.system("git clone --mirror git@gitlab.bci.cl:"+repositorio+".git")
