@@ -11,3 +11,4 @@ REPOS_TO_CLONE = [
 
 NAME_ORGANIZATION = 'ogranizacionPrueba123'
 PRIVATE_TOKEN_REPO = ''
+USER_NAME = 'sentra-excmapi'

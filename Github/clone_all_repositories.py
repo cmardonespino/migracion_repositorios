@@ -27,4 +27,4 @@ request_json = requests.get(url).json()
 
 os.chdir("./repositorios")
 for repo in request_json:
-	os.system("git clone https://"+PRIVATE_TOKEN_REPO+"@github.com/{}".format(repo["full_name"])+".git")
+	os.system("git clone --mirror https://"+PRIVATE_TOKEN_REPO+"@github.com/{}".format(repo["full_name"])+".git")
