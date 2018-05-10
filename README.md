@@ -60,3 +60,4 @@ En caso de que usted necesite migrar los repositorios de Gitlab a Bitbucket, ust
 ### Bibliografía utilizada
 * [How do I cd in python](https://stackoverflow.com/questions/431684/how-do-i-cd-in-python)
 * [API Github](https://developer.github.com/v3/)
+* [HTTPs and OAuth](https://blog.github.com/2012-09-21-easier-builds-and-deployments-using-git-over-https-and-oauth/)
