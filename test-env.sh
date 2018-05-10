@@ -51,6 +51,7 @@ case "$1" in
     green "CLONANDO REPOSITORIOS DEFINIDOS DE GITLAB"
     python clone_specifics_repositories.py
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
+    cd ..
     python push_repositories.py
     ;;
 esac
