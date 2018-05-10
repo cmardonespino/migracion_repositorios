@@ -4,7 +4,7 @@
 #Con estas variables se tiene acceso al nombre de todos los repositorios privados de un usuario#
 ################################################################################################
 
-URL_GIT_REPO = 'http://gitlab.bci.cl'
+URL_GIT_REPO = ''
 PRIVATE_TOKEN_REPO = ''
 API_VERSION = 3
 USER_NAME = 'cmardom'
