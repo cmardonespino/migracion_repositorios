@@ -2,18 +2,21 @@
 Proyecto correspondiente al desarrollo de scripts escritos en python 2.7 para migrar repositorios [Github](https://github.com/) y [Gitlab](https://gitlab.com) a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
 Los scripts fueron desarrollados el Sistema Operativo Windows 7, por lo que si usted utiliza otro sistema operativo, tendrá que descargar las dependencias de acuerdo al administrador de paquetes que usted puede o este utilizando.
 # 2. Requerimientos
-Como requerimientos necesarios para utilizar este proyecto, usted necesita tener instalado en su computador:
-* python 2.7
-* pip 9.0.3
+Como requerimientos necesarios para utilizar este proyecto, usted necesita tener instalado en su computador lo siguiente:
+* python 2.7+
+* pip 9.0.1+
 * pygithub
-* python-gitlab
-* administrador de paquetes [chocolatey](https://chocolatey.org)
-* [make](https://chocolatey.org/packages/make)
-* Tener la SSH KEY del computador registrada en [Github](https://github.com/) y [Gitlab](https://gitlab.com).
+* python-gitlab	
+* make
 
-Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
+Usted puede instalar lo mencionado anteriormente con el administrador de paquetes de acuerdo a su sistema operativo. Algunos ejemplos:
+* [chocolatey](https://chocolatey.org) para windows
+* [homebrew](https://brew.sh/) para MacOS
+
+Usted además debe crear un directorio llamado "repositorios" en las carpetas [Gitlab](/Gitlab) y [Github](/Github) y, por último, necesita tener asociada una SSH Key del computador registrada en [Github](https://github.com/) y [Gitlab](https://gitlab.com) [Bitbucket Cloud](https://bitbucket.org/).
 
 ## 2.1Configuración variables.y
+Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
 ### 2.1.1 Configuración variables.py para Gitlab
 Para el archivo [variables.py](Gitlab/variables.py), se le solicitará una cierta cantidad de variables las cuales serán utilizadas en los scripts.
 
