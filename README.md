@@ -13,7 +13,7 @@ Usted puede instalar lo mencionado anteriormente con el administrador de paquete
 * [chocolatey](https://chocolatey.org) para windows
 * [homebrew](https://brew.sh/) para MacOS
 
-Usted además debe crear un directorio llamado "repositorios" en las carpetas [Gitlab](/Gitlab) y [Github](/Github) y, por último, necesita tener asociada una SSH Key del computador registrada en [Github](https://github.com/) y [Gitlab](https://gitlab.com) [Bitbucket Cloud](https://bitbucket.org/).
+Usted además debe crear un directorio llamado "repositorios" en las carpetas [Gitlab](/Gitlab) y [Github](/Github).
 
 ## 2.1 Configuración variables.y
 Como paso inicial, se debe configurar el archivo [variables.py Gitlab](Gitlab/variables.py) o [variables.py Github](Github/variables.py) dependiende del repositorio que se requiera migrar a [Bitbucket Cloud](https://confluence.atlassian.com/get-started-with-bitbucket).
@@ -39,9 +39,6 @@ En esta variable, usted debe ingresar el nombre del repositorio el cual se desee
 En esta variable, usted debe ingresar el nombre de la organización donde se encuentren los repositorios a clonar
 #### 2.1.2.3 PRIVATE_TOKEN_REPO
 En esta variable, usted debe [generar una access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) desde su cuenta registrada en la URL que usted ingreso. Una vez generado el token, usted debe ingresarlo en la variable.
-#### 2.1.2.4 USER_NAME
-En esta variable, usted debe ingresar el nombre de usuario del repositorio desde el cual se clonaran los repositorios.
-
 # 3. HOW-TO
 ## 3.1 Migración de Github a Bitbucket
 En caso de que usted necesite migrar los repositorios de Github a Bitbucket, usted debe ejecutar desde la linea de comandos lo siguiente:
