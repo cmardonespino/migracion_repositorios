@@ -9,6 +9,13 @@ Como requerimientos necesarios para utilizar este proyecto, usted necesita tener
 * python-gitlab	
 * make
 
+Como se menciono anteriormente, se trabajó con Windows 7, por lo que se utilizó Chocolatey como administrador de paquetes. Los pasos necesarios para instalar los requerimientos con chocolatey son:
+* choco install python2
+* choco install pip
+* pip install pygithub
+* pip install python-gitlab
+* choco install make
+
 Usted puede instalar lo mencionado anteriormente con el administrador de paquetes de acuerdo a su sistema operativo. Algunos ejemplos:
 * [chocolatey](https://chocolatey.org) para windows
 * [homebrew](https://brew.sh/) para MacOS
