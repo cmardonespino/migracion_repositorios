@@ -13,4 +13,6 @@ request_json = requests.get(url).json()
 
 os.chdir("./repositorios")
 for repositorio in REPOS_TO_CLONE:
-	os.system("git clone git@github.com:"+NAME_ORGANIZATION+"/"+repositorio+".git")
+	#print("git clone https://"+PRIVATE_TOKEN_REPO+"@github.com/"+NAME_ORGANIZATION+"/"+repositorio+".git")
+	os.system("git clone https://"+PRIVATE_TOKEN_REPO+"@github.com/"+NAME_ORGANIZATION+"/"+repositorio+".git")
+	#os.system("git clone https://"+PRIVATE_TOKEN_REPO+"@github.com/{}".format(repo["full_name"])+".git")

@@ -1,7 +1,7 @@
 # -- coding: utf-8 --
 
 REPOS_TO_CLONE = [
-	'repoPrueba4',
+	'repoPrueba1',
 	'repoPrueba5'
 ]
 
@@ -11,4 +11,3 @@ REPOS_TO_CLONE = [
 
 NAME_ORGANIZATION = 'ogranizacionPrueba123'
 PRIVATE_TOKEN_REPO = ''
-USER_NAME = 'cmardonespino'
