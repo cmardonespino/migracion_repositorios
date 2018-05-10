@@ -11,6 +11,9 @@ url = "{}?access_token={}".format(
 )
 request_json = requests.get(url).json()
 
+if os.path.isdir("./repositorios") == False:
+	os.system('mkdir repositorios')
+
 os.chdir("./repositorios")
 for repositorio in REPOS_TO_CLONE:
 	os.system("git clone --mirror https://"+PRIVATE_TOKEN_REPO+"@github.com/"+NAME_ORGANIZATION+"/"+repositorio+".git")

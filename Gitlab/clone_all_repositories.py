@@ -22,6 +22,9 @@ gl.auth()
 
 projects = gl.projects.list()								
 					
+if os.path.isdir("./repositorios") == False:
+	os.system('mkdir repositorios')
+
 os.chdir("./repositorios")											
 for project in projects:									
 	os.system("git clone "+project.ssh_url_to_repo)
