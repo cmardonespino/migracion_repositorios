@@ -22,6 +22,7 @@ case "$1" in
     cd Github
     green "CLONANDO TODOS LOS REPOSITORIOS DE GITHUB"
     python clone_all_repositories.py
+    cd ..
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
     python push_repositories.py
     ;;
@@ -29,6 +30,7 @@ case "$1" in
     cd Github
     green "CLONADO REPOSITORIOS DEFINIDOS DE GITHUB"
     python clone_specifics_repositories.py
+    cd ..
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
     python push_repositories.py
     ;;
