@@ -22,7 +22,6 @@ case "$1" in
     cd Github
     green "CLONANDO TODOS LOS REPOSITORIOS DE GITHUB"
     python clone_all_repositories.py
-    cd ..
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
     python push_repositories.py
     ;;
@@ -30,7 +29,6 @@ case "$1" in
     cd Github
     green "CLONADO REPOSITORIOS DEFINIDOS DE GITHUB"
     python clone_specifics_repositories.py
-    cd ..
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
     python push_repositories.py
     ;;
@@ -39,7 +37,6 @@ case "$1" in
     green "CLONANDO TODOS LOS REPOSITORIOS DE GITLAB"
     python clone_all_repositories.py
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
-    cd ..
     python push_repositories.py
     ;;
   specifics_group_gitlab)
@@ -47,7 +44,6 @@ case "$1" in
     green "CLONANDO REPOSITORIOS DE GRUPOS ESPECIFICOS DE GITLAB"
     python clone_specifics_groups_repositories.py
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
-    cd ..
     python push_repositories.py
     ;;
   specifics_repo_gitlab)
@@ -55,7 +51,6 @@ case "$1" in
     green "CLONANDO REPOSITORIOS DEFINIDOS DE GITLAB"
     python clone_specifics_repositories.py
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
-    cd ..
     python push_repositories.py
     ;;
 esac

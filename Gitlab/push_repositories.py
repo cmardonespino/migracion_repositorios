@@ -25,4 +25,4 @@ for name in carpetas_en_el_directorio:
 	os.chdir(path_principal)
 	ID_ORIGEN += 1
 
-os.system('rm -rf repositorios/')
+#os.system('rm -rf repositorios/')
