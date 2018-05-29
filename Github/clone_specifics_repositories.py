@@ -14,8 +14,6 @@
 #https://github.com/copitux/python-github3
 
 import os
-import requests
-from github import Github
 
 from variables import NAME_ORGANIZATION, PRIVATE_TOKEN_REPO
 
