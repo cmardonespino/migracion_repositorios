@@ -1,7 +1,6 @@
 # -- coding: utf-8 --
 
 import os, sys
-import requests
 from variables import USER_NAME
 
 # https://developer.atlassian.com/bitbucket/api/2/reference/meta/filtering
