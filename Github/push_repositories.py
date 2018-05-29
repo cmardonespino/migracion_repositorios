@@ -16,7 +16,7 @@ path_principal = os.getcwd()
 ID_ORIGEN = 0
 
 for name in carpetas_en_el_directorio:
-	os.chdir("./repositorios/"+name)
+	os.chdir(path_principal+"/repositorios/"+name)
 	os.system("git remote add origin-"+str(ID_ORIGEN)+" git@bitbucket.org:"+NAME_ORGANIZATION_BITBUCKET+"/"+name.lower())
 	print("git remote add origin-"+str(ID_ORIGEN)+" git@bitbucket.org:"+NAME_ORGANIZATION_BITBUCKET+"/"+name.lower())
 	os.system("git push origin-"+str(ID_ORIGEN)+" --mirror")
