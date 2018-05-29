@@ -30,7 +30,7 @@ case "$1" in
     green "CLONADO REPOSITORIOS DEFINIDOS DE GITHUB"
     python clone_specifics_repositories.py
     green "PUSHEANDO LOS REPOSITORIOS A BITBUCKET"
-    python push_repositories.py
+    python -u push_repositories.py
     ;;
   all_repo_gitlab)
     cd Gitlab
