@@ -10,3 +10,4 @@ REPOS_TO_CLONE = [
 
 NAME_ORGANIZATION_BITBUCKET = 'sentra-excmapi'
 NAME_ORGANIZATION_GITHUB = 'ogranizacionPrueba123'
+
