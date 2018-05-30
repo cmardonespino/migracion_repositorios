@@ -2,7 +2,7 @@
 
 REPOS_TO_CLONE = [
 	'repoPrueba5',
-	'repoPrueba2'
+	'ogranizacionPrueba123/repoPrueba2'
 ]
 
 ################################################################################################
