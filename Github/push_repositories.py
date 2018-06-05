@@ -5,14 +5,15 @@ from variables import NAME_ORGANIZATION_BITBUCKET
 
 # https://developer.atlassian.com/bitbucket/api/2/reference/meta/filtering
 
-carpetas_en_el_directorio = os.listdir("./repositorios")
+path_principal = os.getcwd()
+
+carpetas_en_el_directorio = os.listdir(path_principal+"/repositorios")
 
 '''
 	GUARDAMOS EL PATH DONDE SE ENCUENTRAN LOS .PY PARA VOLVER
 	DE LA CARPETA REPOSITORIOS A CARPETA GITX
 '''
 
-path_principal = os.getcwd()
 ID_ORIGEN = 0
 
 for name in carpetas_en_el_directorio:
